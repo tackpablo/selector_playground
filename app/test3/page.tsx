@@ -2,14 +2,10 @@
 import { useState, useEffect } from "react";
 
 export default function TestPage3() {
-  const [width, setWidth] = useState<number>(
-    typeof window !== "undefined" ? window.innerWidth : 0
-  );
-
+  const [width, setWidth] = useState(0);
   useEffect(() => {
-    function handleResize() {
-      setWidth(window.innerWidth);
-    }
+    setWidth(window.innerWidth);
+    const handleResize = () => setWidth(window.innerWidth);
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -18,28 +14,19 @@ export default function TestPage3() {
 
   return (
     <div className="space-y-6 p-6">
-      <h1 className="text-2xl font-bold">Test Page 3</h1>
-      <p>Resize window to see dynamic JS-driven style changes.</p>
+      <h1 className="text-2xl font-bold">Test Page 3: Dynamic Class Names</h1>
 
       <div
         data-testid="magic-element"
-        className={`p-4 rounded shadow ${
+        className={`p-4 rounded-md shadow-md ${
           isDesktopOrTablet
-            ? "bg-purple-300 text-white"
-            : "bg-purple-100 text-purple-900"
+            ? "bg-purple-400 text-white"
+            : "bg-purple-200 text-purple-900"
         }`}
+        data-variant={isDesktopOrTablet ? "desktop" : "mobile"}
       >
-        🌟 Magic Element (Test 3)
+        🌟 Magic Element (Test 3 — Modified)
       </div>
-
-      <input
-        className={`mt-4 p-2 border rounded w-full ${
-          isDesktopOrTablet
-            ? "bg-purple-300 text-white"
-            : "bg-purple-100 text-purple-900"
-        }`}
-        placeholder="Try resizing to see input style change"
-      />
     </div>
   );
 }

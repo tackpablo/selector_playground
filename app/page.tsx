@@ -18,21 +18,20 @@ export default function HomePage() {
         <ul className="list-disc list-inside space-y-2">
           <li>
             <Link href="/test1" className="text-blue-600 hover:underline">
-              Test Page 1 - Flexbox reordering + conditional text visibility on
-              mobile/tablet/desktop + elements changing order and visibility
+              Test Page 1 - Here, .rounded.shadow became .rounded-xl.shadow-lg,
+              breaking the old query.
             </Link>
           </li>
           <li>
             <Link href="/test2" className="text-blue-600 hover:underline">
-              Test Page 2 - Sidebar & main content with different orders + magic
-              element changes ID & style + sidebar content changes with screen
-              size
+              Test Page 2 - Here, the ID changed and bg-red-500 → bg-red-400, so
+              #magic-2 or the old class combo will fail.
             </Link>
           </li>
           <li>
             <Link href="/test3" className="text-blue-600 hover:underline">
-              Test Page 3 - Article with conditional background/text color based
-              on window width + editable magic element + grid layout changes
+              Test Page 3 - Here, the original .rounded.shadow is gone, replaced
+              with .rounded-md.shadow-md and dynamic colors.
             </Link>
           </li>
         </ul>
