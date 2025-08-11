@@ -1,6 +1,7 @@
 import "./globals.css";
 import Link from "next/link";
 import type { Metadata } from "next";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Selector Playground",
@@ -14,14 +15,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="min-h-screen bg-gray-50">
-        <nav className="bg-white shadow p-4 flex gap-4">
-          <Link href="/">Home</Link>
-          <Link href="/test1">Test 1</Link>
-          <Link href="/test2">Test 2</Link>
-        </nav>
-        <main className="p-6">{children}</main>
-      </body>
+      <head>
+        <Script
+          id="keak-script"
+          src="https://keakdev.blob.core.windows.net/scripts/a56219c0-db4a-4176-8b15-7cdb47a521d7-19.js"
+          data-cookie="19"
+        />
+      </head>
+      <body>{children}</body>
     </html>
   );
 }
