@@ -21,10 +21,14 @@ export default function RootLayout({
           src="https://keakdev.blob.core.windows.net/scripts/a56219c0-db4a-4176-8b15-7cdb47a521d7-19.js"
           data-cookie="19"
         />
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `.async-hide { opacity: 0 !important; background: white !important; }`,
+          }}
+        />
         <script
           dangerouslySetInnerHTML={{
             __html: `
-              <style>.async-hide { opacity: 0 !important; background: white !important; } </style>
               (function(KEAK, K, E, A, K_, H, I, D, E_) {
                 K.className += ' ' + E;
                 H.start = 1 * new Date;
