@@ -24,23 +24,21 @@ export default function RootLayout({
         <script
           dangerouslySetInnerHTML={{
             __html: `
-              <style>.async-hide { opacity: 0 !important; background: white !important;} </style>
-              <script>
-                (function(KEAK, K, E, A, K_, H, I, D, E_) {
-                  K.className += ' ' + E;
-                  H.start = 1 * new Date;
-                  H.end = I = function() {
-                    K.className = K.className.replace(RegExp(' ?' + E), '');
-                  };
-                  (KEAK[A] = KEAK[A] || []).hide = H;
-                  setTimeout(function() {
-                    I();
-                    H.end = null;
-                  }, K_);
-                  H.timeout = K_;
-                })(window, document.documentElement, 'async-hide', 'dataLayer', 800,
-                  { 'CONTAINER_ID': true });
-              </script>
+              <style>.async-hide { opacity: 0 !important; background: white !important; } </style>
+              (function(KEAK, K, E, A, K_, H, I, D, E_) {
+                K.className += ' ' + E;
+                H.start = 1 * new Date;
+                H.end = I = function() {
+                  K.className = K.className.replace(RegExp(' ?' + E), '');
+                };
+                (KEAK[A] = KEAK[A] || []).hide = H;
+                setTimeout(function() {
+                  I();
+                  H.end = null;
+                }, K_);
+                H.timeout = K_;
+              })(window, document.documentElement, 'async-hide', 'dataLayer', 800,
+                { 'CONTAINER_ID': true });
             `,
           }}
         />
