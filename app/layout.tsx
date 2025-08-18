@@ -18,8 +18,8 @@ export default function RootLayout({
       <head>
         <Script
           id="keak-script"
-          src="https://keakdev.blob.core.windows.net/scripts/a56219c0-db4a-4176-8b15-7cdb47a521d7-27.js"
-          data-cookie="27"
+          src="https://keakdev.blob.core.windows.net/scripts/a56219c0-db4a-4176-8b15-7cdb47a521d7-28.js"
+          data-cookie="28"
         />
         <style
           dangerouslySetInnerHTML={{
