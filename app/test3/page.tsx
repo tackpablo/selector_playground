@@ -37,7 +37,7 @@ export default function TestPage3() {
             ? "shadow-sm bg-purple-300 text-purple-800" // Tablet-specific styling
             : "shadow-md bg-purple-400 text-white" // Desktop styling
         }`}
-        data-variant={deviceType}
+        // data-variant={deviceType}
       >
         🌟 Magic Element 1 — Mobile: .p, Tablet: .shadow-sm, Desktop: .shadow-md
       </div>
@@ -52,7 +52,7 @@ export default function TestPage3() {
             ? "shadow border border-solid border-gray-300 bg-white" // Tablet-specific
             : "shadow-lg bg-white" // Desktop
         }`}
-        data-variant={deviceType}
+        // data-variant={deviceType}
       >
         🔮 Magic Element 2 — Mobile: .border-dashed, Tablet: .border-solid,
         Desktop: .shadow-lg
@@ -68,7 +68,7 @@ export default function TestPage3() {
             ? "bg-orange-500" // Tablet gets orange
             : "bg-green-500" // Desktop gets green
         }`}
-        data-variant={deviceType}
+        // data-variant={deviceType}
       >
         ✨ Magic Element 3 — Mobile: red, Tablet: orange, Desktop: green
       </div>
