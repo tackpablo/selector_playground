@@ -29,7 +29,7 @@ export default function TestPage3() {
 
       {/* Magic Element 1 — Now has 3 distinct states */}
       <div
-        data-testid="magic-element"
+        // data-testid="magic-element"
         className={`p-4 rounded-md ${
           deviceType === "mobile"
             ? "p bg-purple-200 text-purple-900"
@@ -44,7 +44,7 @@ export default function TestPage3() {
 
       {/* Magic Element 2 — Different styling pattern */}
       <div
-        data-testid="magic-element-2"
+        // data-testid="magic-element-2"
         className={`rounded-xl p-4 ${
           deviceType === "mobile"
             ? "border border-dashed border-gray-500 bg-gray-50"
@@ -60,7 +60,7 @@ export default function TestPage3() {
 
       {/* Magic Element 3 — Color progression */}
       <div
-        data-testid="magic-element-3"
+        // data-testid="magic-element-3"
         className={`rounded-lg shadow p-2 text-white ${
           deviceType === "mobile"
             ? "bg-red-500"
