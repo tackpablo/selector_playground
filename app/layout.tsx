@@ -21,6 +21,12 @@ export default function RootLayout({
           src="https://keakdev.blob.core.windows.net/scripts/a56219c0-db4a-4176-8b15-7cdb47a521d7-31.js"
           data-cookie="31"
         />
+        <script
+          id="keak-shopify-theme-script"
+          src="https://keakdev.blob.core.windows.net/scripts/shopify-theme-0aa09d7f-07c0-4454-a166-d945ef299b01.js"
+          type="text/javascript"
+          data-cookie="7"
+        ></script>
         <style
           dangerouslySetInnerHTML={{
             __html: `.async-hide { opacity: 0 !important; background: white !important; }`,
