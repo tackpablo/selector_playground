@@ -23,9 +23,9 @@ export default function RootLayout({
         />
         <script
           id="keak-shopify-theme-script"
-          src="https://keakdev.blob.core.windows.net/scripts/shopify-theme-0aa09d7f-07c0-4454-a166-d945ef299b01.js"
+          src="https://keakdev.blob.core.windows.net/scripts/shopify-theme-0c9de8d1-eeea-47c8-8843-4ff196a94149.js"
           type="text/javascript"
-          data-cookie="7"
+          data-cookie="31"
         ></script>
         <style
           dangerouslySetInnerHTML={{
