@@ -23,7 +23,7 @@ export default function RootLayout({
         />
         <script
           id="keak-shopify-theme-script"
-          src="https://keakdev.blob.core.windows.net/scripts/shopify-theme-0c9de8d1-eeea-47c8-8843-4ff196a941499.js"
+          src="https://keakdev.blob.core.windows.net/scripts/shopify-theme-0c9de8d1-eeea-47c8-8843-4ff196a94149.js"
           type="text/javascript"
           data-cookie="31"
         ></script>
