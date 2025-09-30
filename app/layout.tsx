@@ -16,16 +16,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <Script
-          id="keak-script"
-          src="https://keakdev.blob.core.windows.net/scripts/a56219c0-db4a-4176-8b15-7cdb47a521d7-31.js"
-          data-cookie="31"
-        />
         <script
-          id="keak-shopify-theme-script"
-          src="https://keakdev.blob.core.windows.net/scripts/shopify-theme-0c9de8d1-eeea-47c8-8843-4ff196a94149.js"
+          id="keak-general-script"
+          src="http://localhost:3000/api/scripts/4/general/full/script.js"
           type="text/javascript"
-          data-cookie="31"
+          data-domain="4"
         ></script>
         <style
           dangerouslySetInnerHTML={{
