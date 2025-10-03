@@ -18,7 +18,7 @@ export default function RootLayout({
       <head>
         <script
           id="keak-general-script"
-          src="https://3xawjsjkilfsb1o2.public.blob.vercel-storage.com/scripts/mgbfm12i-sfe5jo-domain-4-httpsselector-playground.vercel.app.js"
+          src="https://3xawjsjkilfsb1o2.public.blob.vercel-storage.com/scripts/mgbh82s5-2crle1-domain-4-httpsselector-playground.vercel.app.js"
           type="text/javascript"
           data-domain="4"
         ></script>
