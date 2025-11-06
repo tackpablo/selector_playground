@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Test2Page() {
   return (
     <main className="p-6 max-w-4xl mx-auto space-y-8">
@@ -19,6 +21,27 @@ export default function Test2Page() {
           <p>Resize window to see style changes.</p>
         </section>
       </div>
+
+      <nav className="mt-12 space-y-4">
+        <h2 className="text-xl font-semibold">Navigation</h2>
+        <ul className="list-disc list-inside space-y-2">
+          <li>
+            <Link href="/" className="text-blue-600 hover:underline">
+              Home Page
+            </Link>
+          </li>
+          <li>
+            <Link href="/test1" className="text-blue-600 hover:underline">
+              Test Page 1
+            </Link>
+          </li>
+          <li>
+            <Link href="/test3" className="text-blue-600 hover:underline">
+              Test Page 3
+            </Link>
+          </li>
+        </ul>
+      </nav>
     </main>
   );
 }

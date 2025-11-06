@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 export default function TestPage3() {
   const [width, setWidth] = useState(0);
@@ -72,6 +73,27 @@ export default function TestPage3() {
       >
         ✨ Magic Element 3 — Mobile: red, Tablet: orange, Desktop: green
       </div>
+
+      <nav className="mt-12 space-y-4">
+        <h2 className="text-xl font-semibold">Navigation</h2>
+        <ul className="list-disc list-inside space-y-2">
+          <li>
+            <Link href="/" className="text-blue-600 hover:underline">
+              Home Page
+            </Link>
+          </li>
+          <li>
+            <Link href="/test1" className="text-blue-600 hover:underline">
+              Test Page 1
+            </Link>
+          </li>
+          <li>
+            <Link href="/test2" className="text-blue-600 hover:underline">
+              Test Page 2
+            </Link>
+          </li>
+        </ul>
+      </nav>
     </div>
   );
 }
