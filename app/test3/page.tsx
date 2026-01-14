@@ -94,6 +94,19 @@ export default function TestPage3() {
           </li>
         </ul>
       </nav>
+
+      <div className="mt-12 flex gap-4">
+        <img
+          src="/image1.jpg"
+          alt="Random nature image"
+          className="w-1/2 h-auto rounded-lg shadow-md object-cover"
+        />
+        <img
+          src="/image2.jpg"
+          alt="Random city image"
+          className="w-1/2 h-auto rounded-lg shadow-md object-cover"
+        />
+      </div>
     </div>
   );
 }
