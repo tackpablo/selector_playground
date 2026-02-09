@@ -1,6 +1,33 @@
+"use client";
+
 import Link from "next/link";
+import { useEffect, useRef } from "react";
 
 export default function HomePage() {
+  const colorSpanRef = useRef<HTMLSpanElement>(null);
+  const fontSizeSpanRef = useRef<HTMLSpanElement>(null);
+
+  useEffect(() => {
+    const colorEl = colorSpanRef.current;
+    const fontSizeEl = fontSizeSpanRef.current;
+    if (!colorEl || !fontSizeEl) return;
+
+    const onColorClick = () => {
+      colorEl.style.color = colorEl.style.color === "red" ? "" : "red";
+    };
+    const onFontSizeClick = () => {
+      fontSizeEl.style.fontSize =
+        fontSizeEl.style.fontSize === "2em" ? "" : "2em";
+    };
+
+    colorEl.addEventListener("click", onColorClick);
+    fontSizeEl.addEventListener("click", onFontSizeClick);
+    return () => {
+      colorEl.removeEventListener("click", onColorClick);
+      fontSizeEl.removeEventListener("click", onFontSizeClick);
+    };
+  }, []);
+
   return (
     <div className="space-y-8 p-6 max-w-xl mx-auto">
       <h1 className="text-3xl font-bold">Home Page</h1>
@@ -33,6 +60,28 @@ export default function HomePage() {
               Test Page 3 - Here, the original .rounded.shadow is gone, replaced
               with .rounded-md.shadow-md and dynamic colors.
             </Link>
+          </li>
+          <li>
+            <span
+              ref={colorSpanRef}
+              role="button"
+              tabIndex={0}
+              className="cursor-pointer hover:underline"
+              onKeyDown={(e) => e.key === "Enter" && (e.target as HTMLElement).click()}
+            >
+              Changes text from default color to red
+            </span>
+          </li>
+          <li>
+            <span
+              ref={fontSizeSpanRef}
+              role="button"
+              tabIndex={0}
+              className="cursor-pointer hover:underline"
+              onKeyDown={(e) => e.key === "Enter" && (e.target as HTMLElement).click()}
+            >
+              Changes font size to double from default
+            </span>
           </li>
         </ul>
       </nav>
