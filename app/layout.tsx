@@ -56,7 +56,7 @@ export default function RootLayout({
         ></Script>
         <Script
           id="keak-script"
-          src="https://scripts.keak.com/v1/1436"
+          src="http://localhost:5400/v1/1436"
           data-domain="1436"
           strategy="afterInteractive"
         ></Script>
